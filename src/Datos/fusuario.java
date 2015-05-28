@@ -175,8 +175,7 @@ public class fusuario {
        totalregistros=0;
        modelo = new DefaultTableModel(null,titulos);
        
-       sSQL="select idUsuario, nombre, apellido, acceso, login, password, estado"+
-               "from Usuario where login='"+ login + "' and password='"+password+"'  and estado='Habilitado' ";
+       sSQL="select idUsuario, nombre, apellido, acceso, login, password, estado from Usuario where login='"+ login + "' and password='" + password + "'  and estado='Habilitado' ";
        
        try {
            Statement st= cn.createStatement();

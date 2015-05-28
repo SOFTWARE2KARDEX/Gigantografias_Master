@@ -1,20 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Representacion;
 
 import Datos.fcliente;
 import Logica.vcliente;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+
+import Restricciones.LimitarCaracteres;
+import Restricciones.LetrasoCaracteres;
 
 /**
  *
  * @author HENRY
  */
-public class frmcliente extends javax.swing.JFrame {
+public class frmcliente extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form frmcliente
@@ -23,7 +24,11 @@ public class frmcliente extends javax.swing.JFrame {
         initComponents();
         mostrar("");
         inhabilitar();
+        
+        LetrasoCaracteres.SDigitos(txtdocumento);
+        
     }
+    
     private String accion = "guardar";
 
     void ocultar_columnas() {
@@ -79,6 +84,7 @@ public class frmcliente extends javax.swing.JFrame {
         
         //Inicializa en blaco las cajas de texto
         txtidcliente.setText("");
+        cbtipodoc.setSelectedItem("Seleccione");
         txtdocumento.setText("");
         txtrazonsocial.setText("");
         txtdireccion.setText("");
@@ -141,7 +147,10 @@ public class frmcliente extends javax.swing.JFrame {
         btnsalir = new javax.swing.JButton();
         lbltotalregistros = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setIconifiable(true);
+        setTitle("Clientes");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Cliente");
@@ -199,7 +208,12 @@ public class frmcliente extends javax.swing.JFrame {
             }
         });
 
-        cbtipodoc.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "DNI", "RUC" }));
+        cbtipodoc.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccione", "DNI", "RUC", "Carnet Extrajero" }));
+        cbtipodoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbtipodocActionPerformed(evt);
+            }
+        });
 
         btnnuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/nuevo.GIF"))); // NOI18N
         btnnuevo.setText("Nuevo");
@@ -435,7 +449,8 @@ public class frmcliente extends javax.swing.JFrame {
     //Boton Salir
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.getDesktopPane().getDesktopManager().closeFrame(this);
+        inhabilitar();
     }//GEN-LAST:event_btnsalirActionPerformed
 
     
@@ -558,7 +573,8 @@ public class frmcliente extends javax.swing.JFrame {
     //Botón Cancelar
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.getDesktopPane().getDesktopManager().closeFrame(this);
+        inhabilitar();
     }//GEN-LAST:event_btncancelarActionPerformed
 
 
@@ -614,6 +630,20 @@ public class frmcliente extends javax.swing.JFrame {
         txttelefono.setText(tablalistado.getValueAt(fila, 6).toString());
         
     }//GEN-LAST:event_tablalistadoMouseClicked
+
+    private void cbtipodocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbtipodocActionPerformed
+        // TODO add your handling code here:
+        int tipodoc = cbtipodoc.getSelectedIndex();
+
+        switch(tipodoc){
+            case 1:
+                txtdocumento.setDocument(new LimitarCaracteres(txtdocumento,8));                    
+                break;
+            case 2:
+                txtdocumento.setDocument(new LimitarCaracteres(txtdocumento,11));                    
+                break;
+        }
+    }//GEN-LAST:event_cbtipodocActionPerformed
 
     /**
      * @param args the command line arguments

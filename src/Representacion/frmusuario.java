@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author HENRY
  */
-public class frmusuario extends javax.swing.JFrame {
+public class frmusuario extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form frmcliente
@@ -499,7 +499,8 @@ public class frmusuario extends javax.swing.JFrame {
     //Boton Salir
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.getDesktopPane().getDesktopManager().closeFrame(this);
+        inhabilitar();
     }//GEN-LAST:event_btnsalirActionPerformed
 
     
@@ -641,7 +642,8 @@ public class frmusuario extends javax.swing.JFrame {
     //Botón Cancelar
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.getDesktopPane().getDesktopManager().closeFrame(this);
+        inhabilitar();
     }//GEN-LAST:event_btncancelarActionPerformed
 
 

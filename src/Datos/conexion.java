@@ -15,8 +15,8 @@ import javax.swing.JOptionPane;
  * @author HENRY
  */
 public class conexion {
-    public String db="gigantografiasmaster";
-    public String url="jdbc:mysql://127.0.0.1/" +db;
+    public String db="sisgigantografiasmaster";
+    public String url="jdbc:mysql://localhost/" +db;
     public String user="root";
     public String pass="";
 

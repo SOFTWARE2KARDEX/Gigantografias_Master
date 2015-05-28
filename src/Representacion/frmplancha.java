@@ -10,6 +10,8 @@ import Logica.vplancha;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+import Restricciones.LetrasoCaracteres;
+
 /**
  *
  * @author HENRY
@@ -23,6 +25,9 @@ public class frmplancha extends javax.swing.JInternalFrame {
         initComponents();
         mostrar("");
         inhabilitar();
+        
+        LetrasoCaracteres.SDigitos(txtstock);
+        
     }
     private String accion = "guardar";
     
@@ -62,7 +67,7 @@ public class frmplancha extends javax.swing.JInternalFrame {
 
         //Desbloque las cajas de texto
         cbtamaño.setEnabled(true);
-        cbmedida.setEnabled(true);
+        //cbmedida.setEnabled(true);
         txtdescripcion.setEnabled(true);
         txtstock.setEnabled(true);
         txtobservacion.setEnabled(true);
@@ -74,6 +79,8 @@ public class frmplancha extends javax.swing.JInternalFrame {
 
         //Inicializa en blaco las cajas de texto
         txtidplancha.setText("");
+        cbtamaño.setSelectedItem("Seleccione");
+        cbmedida.setSelectedItem("----------");
         txtdescripcion.setText("");
         txtstock.setText("");
         txtobservacion.setText("");
@@ -131,7 +138,10 @@ public class frmplancha extends javax.swing.JInternalFrame {
         btnsalir = new javax.swing.JButton();
         lbltotalregistros = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setIconifiable(true);
+        setTitle("Planchas");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Planchas");
@@ -175,7 +185,12 @@ public class frmplancha extends javax.swing.JInternalFrame {
             }
         });
 
-        cbtamaño.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Grande", "Mediana", "Pequeña" }));
+        cbtamaño.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione", "Grande", "Mediana", "Pequeña" }));
+        cbtamaño.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbtamañoActionPerformed(evt);
+            }
+        });
 
         btnnuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/nuevo.GIF"))); // NOI18N
         btnnuevo.setText("Nuevo");
@@ -201,7 +216,8 @@ public class frmplancha extends javax.swing.JInternalFrame {
             }
         });
 
-        cbmedida.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "72.4 x 61.5 u2", "64.5 x 50.8 u2", "65 x 55 u2", "44 x 40 u2", "51 x 40 u2" }));
+        cbmedida.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "----------" }));
+        cbmedida.setEnabled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -493,7 +509,8 @@ public class frmplancha extends javax.swing.JInternalFrame {
     //Botón Cancelar
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.getDesktopPane().getDesktopManager().closeFrame(this);
+        inhabilitar();
     }//GEN-LAST:event_btncancelarActionPerformed
 
     
@@ -556,8 +573,40 @@ public class frmplancha extends javax.swing.JInternalFrame {
     //Botón Salir
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        this.getDesktopPane().getDesktopManager().closeFrame(this);
+        inhabilitar();
     }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void cbtamañoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbtamañoActionPerformed
+        // TODO add your handling code here:
+        cbmedida.setEnabled(true);
+        int posicion;
+        posicion = cbtamaño.getSelectedIndex();
+        
+        switch (posicion){
+            
+            case 0:
+                cbmedida.removeAllItems();
+                cbmedida.addItem("Seleccione");
+                cbmedida.setEnabled(false);
+                break;
+                
+            case 1:
+                cbmedida.removeAllItems();
+                cbmedida.addItem("72.4 x 61.5 u2");
+                break;
+            case 2:
+                cbmedida.removeAllItems();
+                cbmedida.addItem("64.5 x 50.8 u2");
+                cbmedida.addItem("65 x 55 u2");
+                break;
+            case 3:
+                cbmedida.removeAllItems();
+                cbmedida.addItem("51 x 40 u2");
+                cbmedida.addItem("44 x 40 u2");
+                break;
+        }
+    }//GEN-LAST:event_cbtamañoActionPerformed
 
     /**
      * @param args the command line arguments

@@ -98,6 +98,7 @@ public class frmvistaoperacion extends javax.swing.JInternalFrame {
         );
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salir.gif"))); // NOI18N
+        jButton1.setMnemonic('x');
         jButton1.setText("Salir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

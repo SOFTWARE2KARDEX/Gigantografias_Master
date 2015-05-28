@@ -70,6 +70,7 @@ public class frmusuariologin extends javax.swing.JFrame {
         });
 
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salir.gif"))); // NOI18N
+        btnsalir.setMnemonic('x');
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

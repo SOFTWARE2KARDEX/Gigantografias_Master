@@ -17,9 +17,6 @@ import Restricciones.LetrasoCaracteres;
  */
 public class frmcliente extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form frmcliente
-     */
     public frmcliente() {
         initComponents();
         mostrar("");
@@ -27,7 +24,10 @@ public class frmcliente extends javax.swing.JInternalFrame {
         
         LetrasoCaracteres.SDigitos(txtdocumento);
         
+        //Lector_de_teclas.Lector(this);
+        
     }
+    
     
     private String accion = "guardar";
 
@@ -151,6 +151,11 @@ public class frmcliente extends javax.swing.JInternalFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setIconifiable(true);
         setTitle("Clientes");
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Cliente");
@@ -365,6 +370,7 @@ public class frmcliente extends javax.swing.JInternalFrame {
         });
 
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salir.gif"))); // NOI18N
+        btnsalir.setMnemonic('x');
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -644,6 +650,10 @@ public class frmcliente extends javax.swing.JInternalFrame {
                 break;
         }
     }//GEN-LAST:event_cbtipodocActionPerformed
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formKeyPressed
 
     /**
      * @param args the command line arguments

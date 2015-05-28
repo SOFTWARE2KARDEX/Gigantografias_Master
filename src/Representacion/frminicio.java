@@ -5,6 +5,7 @@ import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 
 import Java_Class.CentrarVentanaInterna;
+import java.awt.Toolkit;
 
 /**
  *
@@ -365,6 +366,7 @@ public class frminicio extends javax.swing.JFrame {
         
         if(form1.isShowing() || form1.isIcon()){    // Si la instancia esta visible o esta Minimizada (osea si existe dentro del MDI)
             
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
             
         }
@@ -384,7 +386,9 @@ public class frminicio extends javax.swing.JFrame {
     private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
         // TODO add your handling code here:
         if(form2.isShowing() || form2.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form2);
@@ -398,7 +402,9 @@ public class frminicio extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         if(form3.isShowing() || form3.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form3);
@@ -413,7 +419,9 @@ public class frminicio extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         if(form4.isShowing() || form4.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form4);
@@ -435,7 +443,9 @@ public class frminicio extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         if(form7.isShowing() || form7.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form7);
@@ -456,7 +466,9 @@ public class frminicio extends javax.swing.JFrame {
     private void tipodeoperacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipodeoperacionesActionPerformed
         // TODO add your handling code here:
         if(form8.isShowing() || form8.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form8);
@@ -469,7 +481,9 @@ public class frminicio extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         if(form5.isShowing() || form5.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form5);
@@ -493,7 +507,9 @@ public class frminicio extends javax.swing.JFrame {
     private void micompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_micompraActionPerformed
         // TODO add your handling code here:
         if(form6.isShowing() || form6.isIcon()){
+            Toolkit.getDefaultToolkit().beep();
             JOptionPane.showMessageDialog(rootPane, "La ventana que intenta abrir ya está abierta, cierre la ventana actual e intente nuevamente");
+            
         }
         else{
             CentrarVentanaInterna.FocusInternalWindow(form6);

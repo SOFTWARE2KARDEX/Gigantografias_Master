@@ -72,7 +72,7 @@ public class frmvistaplancha extends javax.swing.JInternalFrame {
         lbltotalregistros = new javax.swing.JLabel();
         btnsalir = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Listado de Planchas"));
@@ -111,6 +111,7 @@ public class frmvistaplancha extends javax.swing.JInternalFrame {
         lbltotalregistros.setText("Registros");
 
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salir.gif"))); // NOI18N
+        btnsalir.setMnemonic('x');
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

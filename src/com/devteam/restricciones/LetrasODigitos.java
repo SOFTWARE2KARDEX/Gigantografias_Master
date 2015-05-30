@@ -1,4 +1,12 @@
 
+/**
+* 
+* @(1.1)LetrasODigitos.java 25/05/15
+* 
+* Copyright 2015 DevTeam. All rights reserved.
+* 
+*/  
+
 package com.devteam.restricciones;
 
 import java.awt.Toolkit;
@@ -8,13 +16,15 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Anthony
- * @version 1.0, 26/05/15
- * 
  * La clase LetrasODigitos ha sido creada con el fin de restringir 
  * la escritura de caracteres(letras) o dígitos en un JTextField.
  * 
+ * @author Anthony Flores Llantoy
+ * @version 1.1, 26/05/15
+ * @since 1.0
+ * 
  */
+
 public class LetrasODigitos{
 
     private JTextField jtfLetra;
@@ -22,7 +32,7 @@ public class LetrasODigitos{
     public LetrasODigitos(JTextField jtfLetra) {
         this.jtfLetra = jtfLetra;
     }
-        
+
     public static void soloLetras(JTextField jtfLetra){
         jtfLetra.addKeyListener(new KeyAdapter(){
             public void keyTyped(KeyEvent ke_event){

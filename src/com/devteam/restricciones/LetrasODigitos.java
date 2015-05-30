@@ -1,9 +1,7 @@
 
 /**
 * 
-* @(1.1)LetrasODigitos.java 
-* 
-* 25/05/15
+* @(1.1)LetrasODigitos.java 25/05/15
 * 
 * Copyright 2015 DevTeam. All rights reserved.
 * 

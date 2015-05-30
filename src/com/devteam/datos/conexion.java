@@ -13,12 +13,13 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author HENRY
+ * 
  */
 public class conexion {
-    public String db="sisgigantografiasmaster";
-    public String url="jdbc:mysql://localhost/" +db;
-    public String user="root";
-    public String pass="";
+    public String strdb="sisgigantografiasmaster";
+    public String strurl="jdbc:mysql://localhost/" + strdb;
+    public String struser="root";
+    public String strpass="";
 
     public conexion() {
     }
@@ -28,7 +29,7 @@ public class conexion {
         
         try {
             Class.forName("org.gjt.mm.mysql.Driver");
-            link=DriverManager.getConnection(this.url, this.user, this.pass);
+            link=DriverManager.getConnection(this.strurl, this.struser, this.strpass);
             
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showConfirmDialog(null, e);

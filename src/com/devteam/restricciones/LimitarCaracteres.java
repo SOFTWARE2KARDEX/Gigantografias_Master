@@ -16,7 +16,7 @@ import javax.swing.text.PlainDocument;
 
 /**
  *
- * La clase LimitarCaracteres ha sido creada con el fin de restringir 
+ * La clase LimitarCaracteres ha sido creada con el fin de restringir
  * el tamaño de la cadena de texto en un JTextField.
  * 
  * @author Anthony Flores Llantoy

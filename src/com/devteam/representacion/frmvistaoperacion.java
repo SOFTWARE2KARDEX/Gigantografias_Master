@@ -97,7 +97,7 @@ public class frmvistaoperacion extends javax.swing.JInternalFrame {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salir.gif"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/salir.gif"))); // NOI18N
         jButton1.setMnemonic('x');
         jButton1.setText("Salir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

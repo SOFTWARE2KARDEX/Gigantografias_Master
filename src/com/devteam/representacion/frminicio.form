@@ -9,7 +9,7 @@
         <Menu class="javax.swing.JMenu" name="musismaster">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/Inicio.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/Inicio.png"/>
             </Property>
             <Property name="mnemonic" type="int" value="102"/>
             <Property name="text" type="java.lang.String" value="SisMaster"/>
@@ -18,7 +18,7 @@
         <Menu class="javax.swing.JMenu" name="muarchivos">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/Archivo.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/Archivo.png"/>
             </Property>
             <Property name="mnemonic" type="int" value="101"/>
             <Property name="text" type="java.lang.String" value="Archivos"/>
@@ -30,7 +30,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="cutMenuItem">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/hoja.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/hoja.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="116"/>
                 <Property name="text" type="java.lang.String" value="Planchas"/>
@@ -42,7 +42,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="copyMenuItem">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/proveedor.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/proveedor.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="121"/>
                 <Property name="text" type="java.lang.String" value="Proveedores"/>
@@ -54,7 +54,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="tipodeoperaciones">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/cajas.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/cajas.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tipo Operacion"/>
               </Properties>
@@ -67,7 +67,7 @@
         <Menu class="javax.swing.JMenu" name="musalidas">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/salidas.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/salidas.png"/>
             </Property>
             <Property name="mnemonic" type="int" value="104"/>
             <Property name="text" type="java.lang.String" value="Salidas"/>
@@ -76,7 +76,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="contentMenuItem">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/ventas.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/ventas.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="99"/>
                 <Property name="text" type="java.lang.String" value="Venta"/>
@@ -88,7 +88,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="operacion">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/da&#xf1;os.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/da&#xf1;os.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="97"/>
                 <Property name="text" type="java.lang.String" value="Producci&#xf3;n o Da&#xf1;o"/>
@@ -102,7 +102,7 @@
         <Menu class="javax.swing.JMenu" name="entrada">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/agregar_stock.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/agregar_stock.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Entradas"/>
           </Properties>
@@ -114,7 +114,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="micompra">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/compra.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/compra.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Compra"/>
               </Properties>
@@ -127,7 +127,7 @@
         <Menu class="javax.swing.JMenu" name="muregistrar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/agregar.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/agregar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Registrar"/>
           </Properties>
@@ -135,7 +135,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/clientes.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/clientes.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
@@ -148,7 +148,7 @@
         <Menu class="javax.swing.JMenu" name="muherramientas">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/Herramientas.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/Herramientas.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Herramientas"/>
           </Properties>
@@ -156,7 +156,7 @@
         <Menu class="javax.swing.JMenu" name="muconfiguraciones">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/Configuraciones.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/Configuraciones.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Configuraciones"/>
           </Properties>
@@ -167,7 +167,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/File/usuarios.png"/>
+                  <Image iconType="3" name="/com/devteam/imagenes/usuarios.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Usuarios y Accesos"/>
               </Properties>
@@ -185,20 +185,23 @@
         <Menu class="javax.swing.JMenu" name="mureportes">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/reporte.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/reporte.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reportes"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu5">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/devteam/imagenes/Ayuda.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Ayuda"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="musalir">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/Salir.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/salir.gif"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
@@ -241,7 +244,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="escritorio" pref="535" max="32767" attributes="0"/>
+          <Component id="escritorio" pref="516" max="32767" attributes="0"/>
           <Component id="jDesktopPane1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>

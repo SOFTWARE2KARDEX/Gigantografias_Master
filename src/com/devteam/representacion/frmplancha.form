@@ -51,7 +51,7 @@
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -249,7 +249,7 @@
         <Component class="javax.swing.JButton" name="btnnuevo">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/nuevo.GIF"/>
+              <Image iconType="3" name="/com/devteam/imagenes/nuevo.GIF"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nuevo"/>
           </Properties>
@@ -260,7 +260,7 @@
         <Component class="javax.swing.JButton" name="btnguardar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/guardar.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/guardar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Guardar"/>
           </Properties>
@@ -271,7 +271,7 @@
         <Component class="javax.swing.JButton" name="btncancelar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/cancelar.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/cancelar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
@@ -309,7 +309,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" alignment="0" pref="517" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" alignment="0" pref="507" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -385,7 +385,7 @@
         <Component class="javax.swing.JButton" name="btnbuscar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/buscar.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/buscar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
@@ -396,7 +396,7 @@
         <Component class="javax.swing.JButton" name="btneliminar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/eliminar.png"/>
+              <Image iconType="3" name="/com/devteam/imagenes/eliminar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Eliminar"/>
           </Properties>
@@ -407,7 +407,7 @@
         <Component class="javax.swing.JButton" name="btnsalir">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/File/salir.gif"/>
+              <Image iconType="3" name="/com/devteam/imagenes/salir.gif"/>
             </Property>
             <Property name="mnemonic" type="int" value="120"/>
             <Property name="text" type="java.lang.String" value="Salir"/>

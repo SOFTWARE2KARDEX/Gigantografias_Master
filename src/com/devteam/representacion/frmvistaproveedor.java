@@ -94,7 +94,7 @@ public class frmvistaproveedor extends javax.swing.JInternalFrame {
 
         jLabel9.setText("Buscar");
 
-        btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/buscar.png"))); // NOI18N
+        btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/buscar.png"))); // NOI18N
         btnbuscar.setText("Buscar");
         btnbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,7 +102,7 @@ public class frmvistaproveedor extends javax.swing.JInternalFrame {
             }
         });
 
-        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salir.gif"))); // NOI18N
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/salir.gif"))); // NOI18N
         btnsalir.setMnemonic('x');
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
@@ -113,7 +113,7 @@ public class frmvistaproveedor extends javax.swing.JInternalFrame {
 
         lbltotalregistros.setText("Registros");
 
-        btnagregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/nuevo2.png"))); // NOI18N
+        btnagregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/nuevo2.png"))); // NOI18N
         btnagregar.setText("Agregar");
         btnagregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

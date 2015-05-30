@@ -182,16 +182,16 @@ public class frminicio extends javax.swing.JFrame {
         jDesktopPane1.setLayer(lblapellido, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(lblnombre, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        musismaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Inicio.png"))); // NOI18N
+        musismaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/Inicio.png"))); // NOI18N
         musismaster.setMnemonic('f');
         musismaster.setText("SisMaster");
         menuBar.add(musismaster);
 
-        muarchivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Archivo.png"))); // NOI18N
+        muarchivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/Archivo.png"))); // NOI18N
         muarchivos.setMnemonic('e');
         muarchivos.setText("Archivos");
 
-        cutMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/hoja.png"))); // NOI18N
+        cutMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/hoja.png"))); // NOI18N
         cutMenuItem.setMnemonic('t');
         cutMenuItem.setText("Planchas");
         cutMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ public class frminicio extends javax.swing.JFrame {
         });
         muarchivos.add(cutMenuItem);
 
-        copyMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/proveedor.png"))); // NOI18N
+        copyMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/proveedor.png"))); // NOI18N
         copyMenuItem.setMnemonic('y');
         copyMenuItem.setText("Proveedores");
         copyMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -211,7 +211,7 @@ public class frminicio extends javax.swing.JFrame {
         });
         muarchivos.add(copyMenuItem);
 
-        tipodeoperaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/cajas.png"))); // NOI18N
+        tipodeoperaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/cajas.png"))); // NOI18N
         tipodeoperaciones.setText("Tipo Operacion");
         tipodeoperaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,11 +222,11 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(muarchivos);
 
-        musalidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/salidas.png"))); // NOI18N
+        musalidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/salidas.png"))); // NOI18N
         musalidas.setMnemonic('h');
         musalidas.setText("Salidas");
 
-        contentMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/ventas.png"))); // NOI18N
+        contentMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/ventas.png"))); // NOI18N
         contentMenuItem.setMnemonic('c');
         contentMenuItem.setText("Venta");
         contentMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -236,7 +236,7 @@ public class frminicio extends javax.swing.JFrame {
         });
         musalidas.add(contentMenuItem);
 
-        operacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/daños.png"))); // NOI18N
+        operacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/daños.png"))); // NOI18N
         operacion.setMnemonic('a');
         operacion.setText("Producción o Daño");
         operacion.addActionListener(new java.awt.event.ActionListener() {
@@ -248,7 +248,7 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(musalidas);
 
-        entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/agregar_stock.png"))); // NOI18N
+        entrada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/agregar_stock.png"))); // NOI18N
         entrada.setText("Entradas");
         entrada.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
@@ -265,7 +265,7 @@ public class frminicio extends javax.swing.JFrame {
             }
         });
 
-        micompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/compra.png"))); // NOI18N
+        micompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/compra.png"))); // NOI18N
         micompra.setText("Compra");
         micompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -276,10 +276,10 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(entrada);
 
-        muregistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/agregar.png"))); // NOI18N
+        muregistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/agregar.png"))); // NOI18N
         muregistrar.setText("Registrar");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/clientes.png"))); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/clientes.png"))); // NOI18N
         jMenuItem3.setText("Clientes");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -290,14 +290,14 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(muregistrar);
 
-        muherramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Herramientas.png"))); // NOI18N
+        muherramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/Herramientas.png"))); // NOI18N
         muherramientas.setText("Herramientas");
         menuBar.add(muherramientas);
 
-        muconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Configuraciones.png"))); // NOI18N
+        muconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/Configuraciones.png"))); // NOI18N
         muconfiguraciones.setText("Configuraciones");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/usuarios.png"))); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/usuarios.png"))); // NOI18N
         jMenuItem1.setText("Usuarios y Accesos");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -311,14 +311,15 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(muconfiguraciones);
 
-        mureportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/reporte.png"))); // NOI18N
+        mureportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/reporte.png"))); // NOI18N
         mureportes.setText("Reportes");
         menuBar.add(mureportes);
 
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/Ayuda.png"))); // NOI18N
         jMenu5.setText("Ayuda");
         menuBar.add(jMenu5);
 
-        musalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Salir.png"))); // NOI18N
+        musalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/salir.gif"))); // NOI18N
         musalir.setText("Salir");
         musalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -340,7 +341,7 @@ public class frminicio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 535, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 516, Short.MAX_VALUE)
             .addComponent(jDesktopPane1)
         );
 

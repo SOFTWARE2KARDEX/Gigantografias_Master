@@ -187,9 +187,6 @@ public class frmusuariologin extends javax.swing.JFrame {
                     frminicio.muarchivos.setEnabled(false);
                     frminicio.muconfiguraciones.setEnabled(false);
                 }
-                
-                
-                
             }
             
             else {

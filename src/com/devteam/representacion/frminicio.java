@@ -319,7 +319,7 @@ public class frminicio extends javax.swing.JFrame {
         jMenu5.setText("Ayuda");
         menuBar.add(jMenu5);
 
-        musalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/salir.gif"))); // NOI18N
+        musalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/devteam/imagenes/Salir.png"))); // NOI18N
         musalir.setText("Salir");
         musalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

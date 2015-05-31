@@ -29,9 +29,9 @@ public class fopentrada {
     public DefaultTableModel mostrar(String buscar){
        DefaultTableModel modelo;
        
-       String [] titulos = {"ID","IdOperacion","IdProveedor","Proveedor","IdPlancha","Plancha","IdUsuario","Usuario","Cantidad","Existencia","Fecha"};
+       String [] titulos = {"ID","IdOperacion","IdProveedor","Proveedor","IdPlancha","Plancha","IdUsuario","Usuario","Cantidad","Existencia","Fecha","Documento"};
        
-       String [] registro =new String [11];
+       String [] registro =new String [12];
        
        totalregistros=0;
        modelo = new DefaultTableModel(null,titulos);
@@ -40,7 +40,7 @@ public class fopentrada {
             "o.idPlancha,(select Tamaño from Plancha where idPlancha=o.idPlancha)as tamaño ,"+
             "(select Medida from Plancha where idPlancha=o.idPlancha)as medida,o.idUsuario,(select nombre from Usuario where idUsuario=o.idUsuario)as nomb,"+
             "(select apellido from Usuario where idUsuario=o.idUsuario)as apel,o.Cantidad,o.Existencia,"+
-            "o.Fecha from Operacion o inner join Opentrada e on o.idOperacion=e.idOperacion where o.Fecha ='"+ buscar + "' order by idOperacion desc";
+            "o.Fecha,e.Documento from Operacion o inner join Opentrada e on o.idOperacion=e.idOperacion where o.Fecha ='"+ buscar + "' order by idOperacion desc";
        
        try {
            Statement st= cn.createStatement();
@@ -59,8 +59,8 @@ public class fopentrada {
                registro [8]=rs.getString("Cantidad");
                registro [9]=rs.getString("Existencia");
                registro [10]=rs.getString("Fecha");
+               registro [11]=rs.getString("Documento");
                
-                                             
                totalregistros=totalregistros+1;
                modelo.addRow(registro);
                

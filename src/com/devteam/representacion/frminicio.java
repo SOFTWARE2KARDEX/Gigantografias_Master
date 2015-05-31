@@ -5,7 +5,9 @@ import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 
 import com.devteam.representacion.addclass.CentrarVentanaInterna;
+import com.devteam.representacion.addclass.ImagenFondo;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -27,6 +29,7 @@ public class frminicio extends javax.swing.JFrame {
     
     public frminicio() {
         initComponents();
+        escritorio.setBorder(new ImagenFondo());
         this.setExtendedState(frminicio.MAXIMIZED_BOTH);
         this.setTitle("Gigantografías Master");
     }
@@ -42,6 +45,7 @@ public class frminicio extends javax.swing.JFrame {
 
         grupo = new javax.swing.ButtonGroup();
         escritorio = new javax.swing.JDesktopPane();
+        lblimagenFondo = new javax.swing.JLabel();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
         lblidusuario = new javax.swing.JLabel();
@@ -78,6 +82,16 @@ public class frminicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         escritorio.setBackground(new java.awt.Color(102, 153, 255));
+        escritorio.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                escritorioComponentResized(evt);
+            }
+        });
+
+        lblimagenFondo.setBackground(new java.awt.Color(0, 153, 51));
+        lblimagenFondo.setToolTipText("");
+        escritorio.add(lblimagenFondo);
+        lblimagenFondo.setBounds(4, 4, 800, 510);
 
         jDesktopPane1.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -355,7 +369,7 @@ public class frminicio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 516, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 514, Short.MAX_VALUE)
             .addComponent(jDesktopPane1)
         );
 
@@ -537,6 +551,16 @@ public class frminicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void escritorioComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_escritorioComponentResized
+        try{
+            lblimagenFondo.setSize(escritorio.getSize());
+            ImageIcon imagenFondo = new ImageIcon(getClass().getResource("fondo.png"));
+            ImageIcon imagenFondoRedimensionado = new ImageIcon(imagenFondo.getImage().getScaledInstance(lblimagenFondo.getWidth(),
+                    lblimagenFondo.getHeight(), java.awt.Image.SCALE_SMOOTH));
+            lblimagenFondo.setIcon(imagenFondoRedimensionado);
+        }catch(Exception e){}
+    }//GEN-LAST:event_escritorioComponentResized
+
     /**
      * @param args the command line arguments
      */
@@ -594,6 +618,7 @@ public class frminicio extends javax.swing.JFrame {
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblapellido;
     public static javax.swing.JLabel lblidusuario;
+    private javax.swing.JLabel lblimagenFondo;
     public static javax.swing.JLabel lblnombre;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem micompra;

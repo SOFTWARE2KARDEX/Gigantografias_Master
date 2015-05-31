@@ -175,7 +175,8 @@ public class frmusuariologin extends javax.swing.JFrame {
             tablalistado.setModel(modelo);
             
             if (func.totalregistros >0) {
-                this.dispose();
+                //this.dispose();
+                this.setVisible(false);
                 frminicio form = new frminicio();
                 form.toFront();
                 form.setVisible(true);

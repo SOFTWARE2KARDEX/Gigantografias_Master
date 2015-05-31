@@ -6,6 +6,7 @@
 package com.devteam.representacion;
 
 import com.devteam.datos.fcliente;
+import com.devteam.representacion.addclass.CentrarVentanaInterna;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -219,10 +220,11 @@ public class frmvistacliente extends javax.swing.JInternalFrame {
 
     private void btnagregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnagregarActionPerformed
         // TODO add your handling code here:
+        btnagregar.setEnabled(false);
+        
         frmcliente form =new frmcliente();
-        frminicio.escritorio.add(form);
-        form.toFront();
-        form.setVisible(true);
+        
+        CentrarVentanaInterna.FocusInternalWindow(form);
     }//GEN-LAST:event_btnagregarActionPerformed
 
     /**
@@ -261,7 +263,7 @@ public class frmvistacliente extends javax.swing.JInternalFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnagregar;
+    public static javax.swing.JButton btnagregar;
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel9;

@@ -200,13 +200,9 @@ public class fopentrada {
            else {
                return false;
            }
-           
-           
-           
        } catch (Exception e) {
            JOptionPane.showConfirmDialog(null, e);
            return false;
        }
-   }
-    
+   }    
 }

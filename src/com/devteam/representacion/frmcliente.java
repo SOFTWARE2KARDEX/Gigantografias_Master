@@ -457,6 +457,9 @@ public class frmcliente extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         this.getDesktopPane().getDesktopManager().closeFrame(this);
         inhabilitar();
+        if(new frmvistacliente().isShowing() || new frmvistacliente().isIcon()){
+            frmvistacliente.btnagregar.setEnabled(false);            
+        }
     }//GEN-LAST:event_btnsalirActionPerformed
 
     

@@ -571,7 +571,11 @@ public class frmproveedor extends javax.swing.JInternalFrame {
         this.getDesktopPane().getDesktopManager().closeFrame(this);
         inhabilitar();
         
-        frmvistaproveedor.btnagregar.setEnabled(true);
+        // Indica si existe una instancia de la clase frmvistaproveedor 
+        if(new frmvistaproveedor().isShowing() || new frmvistaproveedor().isIcon()){
+            frmvistaproveedor.btnagregar.setEnabled(true);
+        }
+        
     }//GEN-LAST:event_btnsalirActionPerformed
 
     /**

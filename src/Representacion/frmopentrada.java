@@ -9,7 +9,7 @@ import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-import static Representacion.frminicio.escritorio;
+import static Representacion.frminicio.jdpescritorio;
 
 /**
  *
